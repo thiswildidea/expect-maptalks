@@ -2,10 +2,10 @@
 
 var expect = require('expect.js'),
     geos = require('./geo.json');
-//load expect-maptalks
+//load expect-cmap
 require('../index');
 
-describe('expect-maptalks tests', function () {
+describe('expect-cmap tests', function () {
     describe('approx', function () {
         it('approx', function () {
             expect(118.85893323889732).to.be.approx(118.85893323889712);

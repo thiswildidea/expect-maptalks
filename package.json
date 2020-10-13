@@ -1,11 +1,11 @@
 {
-  "name": "expect-maptalks",
-  "version": "0.4.1",
-  "description": "A plugin of expect.js(https://github.com/Automattic/expect.js) for maptalks with assertions for Coordinate/GeoJSON/Layer",
+  "name": "expect-cmap",
+  "version": "0.0.1",
+  "description": "A plugin of expect.js(https://github.com/Automattic/expect.js) for cmap with assertions for Coordinate/GeoJSON/Layer",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MapTalks/expect-maptalks.git"
+    "url": "https://github.com/thiswildidea/expect-cmap.git"
   },
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "eslint": "^2.4.0",
-    "eslint-config-maptalks": "^0.2.1",
+    "eslint-config-cmap": "^0.2.1",
     "mocha": "^2.4.5"
   },
   "peerDependencies": {

@@ -1,31 +1,31 @@
-# expect-maptalks
+# expect-cmap
 
-[![Circle CI](https://circleci.com/gh/maptalks/expect-maptalks.svg?style=shield)](https://circleci.com/gh/maptalks/expect-maptalks)
+[![Circle CI](https://circleci.com/gh/cmap/expect-cmap.svg?style=shield)](https://circleci.com/gh/cmap/expect-cmap)
 
-A plugin of expect.js(https://github.com/Automattic/expect.js) for maptalks with assertions for Coordinate/GeoJSON/Layer
+A plugin of expect.js(https://github.com/Automattic/expect.js) for cmap with assertions for Coordinate/GeoJSON/Layer
 
 ## Usage
 
 ```bash
-npm install expect-maptalks --save-dev
+npm install expect-cmap --save-dev
 ```
 
 ### with Karma
-Install [karma-expect-maptalks](https://github.com/MapTalks/karma-expect-maptalks)
+Install [karma-expect-cmap](https://github.com/thiswildidea/karma-expect-cmap)
 ```bash
-npm install karma-expect-maptalks --save-dev
+npm install karma-expect-cmap --save-dev
 ```
-In karma.conf.js, Attention: **always declare expect-maptalks behind expect**
+In karma.conf.js, Attention: **always declare expect-cmap behind expect**
 ```javascript
     frameworks: [
       'mocha',
       'expect',
-      'expect-maptalks'
+      'expect-cmap'
     ],
     
     plugins: [
       'karma-expect',
-      'karma-expect-maptalks'
+      'karma-expect-cmap'
     ],
 ```
 
@@ -57,7 +57,7 @@ expect({ "type": "Point", "coordinates": [0.0, 0.0] })
 **painted**: asserts the given layer or map is painted in the center with a offset.
 
 ```js
-var v = new maptalks.VectorLayer('v').addGeometries(geos).addTo(map);
+var v = new cmap.VectorLayer('v').addGeometries(geos).addTo(map);
 //asserts layer is painted in the center
 expect(v).to.be.painted();
 //whether the layer is painted with an offset {x:5, y:3} from the center.
